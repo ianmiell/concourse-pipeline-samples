@@ -4,7 +4,7 @@ resources:
   type: git
   source:
     branch: master
-    uri: https://github.com/pivotalservices/concourse-pipeline-samples.git
+    uri: https://github.com/ianmiell/concourse-pipeline-samples.git
 
 jobs:
 - name: Run-automatically
@@ -23,7 +23,7 @@ jobs:
         args:
         - -exc
         - |
-          echo "This job is automatically triggered upon any version change in the resource. Here is a change"
+          echo "This job is automatically triggered upon any version change in the resource."
 
 
 - name: Manually-trigger-me
